@@ -47,6 +47,165 @@ PHP supports several data types:
 
 PHP includes a variety of operators such as arithmetic (`+`, `-`, `*`, `/`), assignment (`=`, `+=`, `-=`, etc.), comparison (`==`, `===`, `!=`, `>`, `<`), and logical (`&&`, `||`, `!`).
 
+Sure! Assignment operators in PHP are used to assign values to variables. Here's a detailed look at the different assignment operators with examples:
+
+### Basic Assignment Operator
+
+#### `=`
+Assigns the right-hand value to the left-hand variable.
+
+```php
+<?php
+$a = 10;  // $a is now 10
+$b = "Hello";  // $b is now "Hello"
+?>
+```
+
+### Combined Assignment Operators
+
+These operators combine an arithmetic or bitwise operator with the assignment operator.
+
+#### `+=`
+Adds the right-hand value to the left-hand variable and assigns the result to the left-hand variable.
+
+```php
+<?php
+$a = 10;
+$a += 5;  // $a is now 15
+?>
+```
+
+#### `-=`
+Subtracts the right-hand value from the left-hand variable and assigns the result to the left-hand variable.
+
+```php
+<?php
+$a = 10;
+$a -= 5;  // $a is now 5
+?>
+```
+
+#### `*=`
+Multiplies the left-hand variable by the right-hand value and assigns the result to the left-hand variable.
+
+```php
+<?php
+$a = 10;
+$a *= 5;  // $a is now 50
+?>
+```
+
+#### `/=`
+Divides the left-hand variable by the right-hand value and assigns the result to the left-hand variable.
+
+```php
+<?php
+$a = 10;
+$a /= 5;  // $a is now 2
+?>
+```
+
+#### `%=`
+Calculates the modulus (remainder) of the left-hand variable divided by the right-hand value and assigns the result to the left-hand variable.
+
+```php
+<?php
+$a = 10;
+$a %= 3;  // $a is now 1
+?>
+```
+
+### Bitwise Assignment Operators
+
+#### `&=`
+Performs a bitwise AND operation on the left-hand variable and the right-hand value and assigns the result to the left-hand variable.
+
+```php
+<?php
+$a = 6;  // 6 in binary is 110
+$a &= 3;  // 3 in binary is 011
+// $a is now 2 (010 in binary)
+?>
+```
+
+#### `|=`
+Performs a bitwise OR operation on the left-hand variable and the right-hand value and assigns the result to the left-hand variable.
+
+```php
+<?php
+$a = 6;  // 6 in binary is 110
+$a |= 3;  // 3 in binary is 011
+// $a is now 7 (111 in binary)
+?>
+```
+
+#### `^=`
+Performs a bitwise XOR operation on the left-hand variable and the right-hand value and assigns the result to the left-hand variable.
+
+```php
+<?php
+$a = 6;  // 6 in binary is 110
+$a ^= 3;  // 3 in binary is 011
+// $a is now 5 (101 in binary)
+?>
+```
+
+#### `<<=`
+Shifts the bits of the left-hand variable to the left by the number of positions specified by the right-hand value and assigns the result to the left-hand variable.
+
+```php
+<?php
+$a = 3;  // 3 in binary is 0011
+$a <<= 2;  // Shift left by 2 positions
+// $a is now 12 (1100 in binary)
+?>
+```
+
+#### `>>=`
+Shifts the bits of the left-hand variable to the right by the number of positions specified by the right-hand value and assigns the result to the left-hand variable.
+
+```php
+<?php
+$a = 12;  // 12 in binary is 1100
+$a >>= 2;  // Shift right by 2 positions
+// $a is now 3 (0011 in binary)
+?>
+```
+
+### String Assignment Operators
+
+#### `.=` 
+Concatenates the right-hand value to the left-hand variable and assigns the result to the left-hand variable.
+
+```php
+<?php
+$a = "Hello";
+$a .= " World!";  // $a is now "Hello World!"
+?>
+```
+
+### Examples of Combined Operations
+
+Combining multiple assignment operators:
+
+```php
+<?php
+$a = 10;
+$b = 5;
+$c = 3;
+
+$a += $b;  // $a is now 15
+$a *= $c;  // $a is now 45
+$a -= $b;  // $a is now 40
+
+// String concatenation
+$str = "PHP";
+$str .= " is fun!";  // $str is now "PHP is fun!"
+?>
+```
+
+These examples demonstrate the use of various assignment operators in PHP. By understanding and using these operators, you can write more concise and readable code.
+
 ### Control Structures
 
 #### Conditional Statements
