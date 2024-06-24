@@ -1,4 +1,4 @@
-==Superglobals==
+##Superglobals
 
 $_GET: Contains query string parameters.
 $_POST: Contains form data.
